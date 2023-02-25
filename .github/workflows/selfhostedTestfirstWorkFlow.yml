@@ -1,4 +1,4 @@
-name: first workflow
+name: first workflow self hosted
 on:
   workflow_dispatch:
 jobs:
