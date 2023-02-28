@@ -33,3 +33,5 @@ jobs:
         run: |
           echo this is the second job
           echo and this is a multi-line script
+          echo $STEP_VAR
+          echo "The following is a secret: ${{secrets.SOME_SECRET}}, of course it is a secret"
