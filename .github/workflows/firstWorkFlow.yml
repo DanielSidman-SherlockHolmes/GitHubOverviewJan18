@@ -1,4 +1,6 @@
 name: first workflow
+env:
+   WORKFLOW_VAR: "workflow variable"
 on:
   workflow_dispatch:
 jobs:
@@ -24,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: secondJob script
+        env:
+           STEP_VAR: "step level var"
         shell: bash
         run: |
           echo this is the second job
