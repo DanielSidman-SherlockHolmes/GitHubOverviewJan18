@@ -36,5 +36,5 @@ jobs:
           echo $STEP_VAR
           echo "The following is a secret: ${{secrets.SOME_SECRET}}, of course it is a secret"
           echo $GITHUB_ACTOR
-          echo $GIT_JOB
+          echo $GITHUB_JOB
           echo $GITHUB_REF
